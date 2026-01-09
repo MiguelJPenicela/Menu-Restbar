@@ -1,5 +1,5 @@
 
-import React, { useState, useMemo, useEffect, useCallback } from 'react';
+import React, { useState, useMemo } from 'react';
 import { PhotoProvider } from 'react-photo-view';
 import { initialMenuData } from './data/initialData';
 import type { MenuItem } from './types';
@@ -91,7 +91,7 @@ const App: React.FC = () => {
         );
     };
 
-    const handleGenerateImage = useCallback(async (itemToUpdate: MenuItem) => {
+    const handleGenerateImage = async (itemToUpdate: MenuItem) => {
         setGeneratingImages(prev => ({ ...prev, [itemToUpdate.id]: true }));
         try {
           const prompt = `Fotografia de alta qualidade de um prato de restaurante: "${itemToUpdate.name}". ${itemToUpdate.description || ''}. Foco na comida, aparência deliciosa, em um ambiente de restaurante.`;
@@ -105,28 +105,11 @@ const App: React.FC = () => {
           );
         } catch (error) {
           console.error('Erro ao gerar imagem:', error);
-          // O alerta foi removido para evitar spam ao usuário no carregamento inicial
+          alert('Falha ao gerar a imagem. Verifique o console para mais detalhes.');
         } finally {
           setGeneratingImages(prev => ({ ...prev, [itemToUpdate.id]: false }));
         }
-      }, []);
-
-      useEffect(() => {
-        // Este efeito é executado uma vez quando o componente é montado.
-        menuItems.forEach(item => {
-            // Verifica os itens que ainda usam a fonte de imagem de placeholder.
-            if (item.image && item.image.includes('source.unsplash.com')) {
-                // Chamamos handleGenerateImage mas não esperamos (await),
-                // permitindo que todas as gerações de imagem comecem em paralelo.
-                handleGenerateImage(item);
-            }
-        });
-        // Desativamos a regra exhaustive-deps porque queremos intencionalmente
-        // que este efeito seja executado apenas uma vez quando o componente for montado,
-        // não toda vez que menuItems ou handleGenerateImage mudar.
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, []);
-
+      };
 
     return (
         <div className="min-h-screen bg-gray-900 text-gray-100">
