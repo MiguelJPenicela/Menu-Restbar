@@ -1,0 +1,5 @@
+{
+  "name": "Cardápio Digital para Restaurante",
+  "description": "Uma aplicação de cardápio digital que permite aos administradores gerir pratos e aos clientes fazerem pedidos via WhatsApp.",
+  "requestFramePermissions": []
+}

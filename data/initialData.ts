@@ -1,0 +1,146 @@
+
+import type { MenuItem } from '../types';
+
+export const initialMenuData: MenuItem[] = [
+    // Bebidas
+    { id: '1', name: 'Impala garrafa', price: 60, image: 'https://source.unsplash.com/400x300/?impala-beer-bottle', category: 'Bebidas' },
+    { id: '2', name: 'Impala lata', price: 65, image: 'https://source.unsplash.com/400x300/?impala-beer-can', category: 'Bebidas' },
+    { id: '3', name: '2M Garrafa', price: 70, image: 'https://source.unsplash.com/400x300/?2M-beer-bottle-mozambique', category: 'Bebidas' },
+    { id: '4', name: '2M Lata', price: 60, image: 'https://source.unsplash.com/400x300/?2M-beer-can-mozambique', category: 'Bebidas' },
+    { id: '5', name: 'Txilar lata', price: 60, image: 'https://source.unsplash.com/400x300/?txilar-cider-can', category: 'Bebidas' },
+    { id: '6', name: 'Txilar garrafa', price: 50, image: 'https://source.unsplash.com/400x300/?txilar-cider-bottle', category: 'Bebidas' },
+    { id: '7', name: 'Preta Garrafa', price: 85, image: 'https://source.unsplash.com/400x300/?laurentina-preta-dark-beer', category: 'Bebidas' },
+    { id: '8', name: 'Manica Garrafa', price: 75, image: 'https://source.unsplash.com/400x300/?manica-beer-bottle', category: 'Bebidas' },
+    { id: '9', name: 'Manica lata', price: 65, image: 'https://source.unsplash.com/400x300/?manica-beer-can', category: 'Bebidas' },
+    { id: '10', name: 'Pretinha', price: 60, image: 'https://source.unsplash.com/400x300/?dark-stout-beer-glass', category: 'Bebidas' },
+    { id: '11', name: 'LITE Garrafa', price: 100, image: 'https://source.unsplash.com/400x300/?castle-lite-beer-bottle', category: 'Bebidas' },
+    { id: '12', name: 'LITE lata', price: 100, image: 'https://source.unsplash.com/400x300/?castle-lite-beer-can', category: 'Bebidas' },
+    { id: '13', name: 'Brutal garrafa', price: 100, image: 'https://source.unsplash.com/400x300/?brutal-fruit-cider-bottle', category: 'Bebidas' },
+    { id: '14', name: 'Brutal lata', price: 110, image: 'https://source.unsplash.com/400x300/?brutal-fruit-cider-can', category: 'Bebidas' },
+    { id: '15', name: 'STELLA', price: 100, image: 'https://source.unsplash.com/400x300/?stella-artois-beer-glass', category: 'Bebidas' },
+    { id: '16', name: 'CORONA garrafa', price: 100, image: 'https://source.unsplash.com/400x300/?corona-beer-bottle-with-lime', category: 'Bebidas' },
+    { id: '17', name: 'Savana lemon', price: 100, image: 'https://source.unsplash.com/400x300/?savanna-light-lemon-cider', category: 'Bebidas' },
+    { id: '18', name: 'Savana Dry', price: 100, image: 'https://source.unsplash.com/400x300/?savanna-dry-premium-cider', category: 'Bebidas' },
+    { id: '19', name: 'Heineken Txoti', price: 100, image: 'https://source.unsplash.com/400x300/?heineken-small-beer-bottle', category: 'Bebidas' },
+    { id: '20', name: 'Heineken lata grande', price: 110, image: 'https://source.unsplash.com/400x300/?heineken-tall-beer-can', category: 'Bebidas' },
+    { id: '21', name: 'Heineken lata peq.', price: 100, image: 'https://source.unsplash.com/400x300/?heineken-beer-can', category: 'Bebidas' },
+    { id: '22', name: 'Heineken silver', price: 110, image: 'https://source.unsplash.com/400x300/?heineken-silver-beer-bottle', category: 'Bebidas' },
+    { id: '23', name: 'Hunters Gold', price: 100, image: 'https://source.unsplash.com/400x300/?hunters-gold-cider-bottle', category: 'Bebidas' },
+    { id: '24', name: 'Hunters Dry', price: 100, image: 'https://source.unsplash.com/400x300/?hunters-dry-cider-bottle', category: 'Bebidas' },
+    { id: '25', name: 'Black Label (RTD)', price: 110, image: 'https://source.unsplash.com/400x300/?black-label-beer-can', category: 'Bebidas' },
+    { id: '26', name: 'Hunsa', price: 110, image: 'https://source.unsplash.com/400x300/?flying-fish-beer-bottle', category: 'Bebidas' },
+    { id: '27', name: 'Doublo Malt', price: 110, image: 'https://source.unsplash.com/400x300/?double-malt-beer-glass', category: 'Bebidas' },
+    { id: '28', name: 'Bernini lata', price: 110, image: 'https://source.unsplash.com/400x300/?bernini-sparkling-grape-can', category: 'Bebidas' },
+    { id: '29', name: 'Bernini garrafa', price: 100, image: 'https://source.unsplash.com/400x300/?bernini-sparkling-grape-bottle', category: 'Bebidas' },
+    { id: '30', name: 'Super bock', price: 90, image: 'https://source.unsplash.com/400x300/?super-bock-beer-bottle', category: 'Bebidas' },
+    { id: '31', name: 'Champanhe JC lata', price: 100, image: 'https://source.unsplash.com/400x300/?jc-le-roux-champagne-can', category: 'Bebidas' },
+    { id: '32', name: 'Champanhe Annabele', price: 600, image: 'https://source.unsplash.com/400x300/?annabelle-sparkling-wine-bottle', category: 'Bebidas' },
+    { id: '33', name: 'Champanhe JC', price: 850, image: 'https://source.unsplash.com/400x300/?jc-le-roux-le-domaine-champagne', category: 'Bebidas' },
+    { id: '34', name: 'Tosti', price: 850, image: 'https://source.unsplash.com/400x300/?tosti-asti-sparkling-wine', category: 'Bebidas' },
+    { id: '35', name: 'Machamdor', price: 350, image: 'https://source.unsplash.com/400x300/?sparkling-wine-celebration', category: 'Bebidas' },
+    { id: '36', name: 'Sangria', price: 1200, image: 'https://source.unsplash.com/400x300/?red-wine-sangria-pitcher-with-fruits', category: 'Bebidas' },
+    
+    // Vinhos
+    { id: '37', name: 'Noble Hill (Tinto)', price: 1400, image: 'https://source.unsplash.com/400x300/?noble-hill-red-wine-bottle', category: 'Vinhos' },
+    { id: '38', name: 'Roadbero black (Tinto)', price: 800, image: 'https://source.unsplash.com/400x300/?dark-intense-red-wine-glass', category: 'Vinhos' },
+    { id: '39', name: 'Ermelinda (Tinto)', price: 750, image: 'https://source.unsplash.com/400x300/?ermelinda-freitas-red-wine', category: 'Vinhos' },
+    { id: '40', name: 'Fast bastard (Tinto)', price: 1200, image: 'https://source.unsplash.com/400x300/?fat-bastard-red-wine-bottle', category: 'Vinhos' },
+    { id: '41', name: 'Monte velho (Tinto)', price: 700, image: 'https://source.unsplash.com/400x300/?monte-velho-red-wine-bottle', category: 'Vinhos' },
+    { id: '42', name: 'Quinta de bacalhão (Tinto)', price: 950, image: 'https://source.unsplash.com/400x300/?quinta-da-bacalhoa-red-wine', category: 'Vinhos' },
+    { id: '43', name: 'Casa da Concordia (pacote)', price: 400, image: 'https://source.unsplash.com/400x300/?box-of-red-wine', category: 'Vinhos' },
+    { id: '44', name: 'Gazela (Verde)', price: 650, image: 'https://source.unsplash.com/400x300/?gazela-vinho-verde-white-wine', category: 'Vinhos' },
+    
+    // Destilados e Licores
+    { id: '45', name: 'Amarula', price: 850, image: 'https://source.unsplash.com/400x300/?amarula-cream-liqueur-glass', category: 'Destilados e Licores' },
+    { id: '46', name: 'Gordon (simples)', price: 75, image: 'https://source.unsplash.com/400x300/?gordons-gin-glass-with-tonic', category: 'Destilados e Licores' },
+    { id: '47', name: 'Gordon (duplo)', price: 150, image: 'https://source.unsplash.com/400x300/?double-shot-gordons-gin-glass', category: 'Destilados e Licores' },
+    { id: '48', name: 'Black label (simples)', price: 100, image: 'https://source.unsplash.com/400x300/?johnnie-walker-black-label-whisky-glass', category: 'Destilados e Licores' },
+    { id: '49', name: 'Black label (duplo)', price: 200, image: 'https://source.unsplash.com/400x300/?double-johnnie-walker-black-label-whisky', category: 'Destilados e Licores' },
+    { id: '50', name: 'Martin (simples)', price: 100, image: 'https://source.unsplash.com/400x300/?martini-bianco-glass', category: 'Destilados e Licores' },
+    { id: '51', name: 'Martin (duplo)', price: 200, image: 'https://source.unsplash.com/400x300/?double-martini-cocktail', category: 'Destilados e Licores' },
+    { id: '52', name: 'Martin (Garrafa)', price: 1000, image: 'https://source.unsplash.com/400x300/?martini-bianco-bottle', category: 'Destilados e Licores' },
+    { id: '53', name: 'Gatleman', price: 1600, image: 'https://source.unsplash.com/400x300/?gentleman-jack-whiskey-bottle', category: 'Destilados e Licores' },
+    { id: '54', name: 'Hankey Bannster', price: 650, image: 'https://source.unsplash.com/400x300/?hankey-bannister-blended-scotch-whisky', category: 'Destilados e Licores' },
+    { id: '55', name: 'Grants', price: 900, image: 'https://source.unsplash.com/400x300/?grants-scotch-whisky-glass', category: 'Destilados e Licores' },
+    { id: '56', name: 'Bombay', price: 1400, image: 'https://source.unsplash.com/400x300/?bombay-sapphire-gin-bottle', category: 'Destilados e Licores' },
+    { id: '57', name: 'Imperial', price: 650, image: 'https://source.unsplash.com/400x300/?imperial-blended-scotch-whisky', category: 'Destilados e Licores' },
+    
+    // Caipirinhas
+    { id: '58', name: 'Caipirinha de limão', price: 250, description: 'Cachaça, limão e açúcar', image: 'https://source.unsplash.com/400x300/?refreshing-lime-caipirinha-cocktail', category: 'Caipirinhas' },
+    { id: '59', name: 'Caipirinha de Maracujá', price: 300, description: 'Cachaça, açúcar e maracujá', image: 'https://source.unsplash.com/400x300/?passion-fruit-caipirinha-cocktail', category: 'Caipirinhas' },
+    { id: '60', name: 'Caipiroska de limão', price: 350, description: 'Vodka, lima, Açúcar', image: 'https://source.unsplash.com/400x300/?lime-caipiroska-vodka-cocktail', category: 'Caipirinhas' },
+    { id: '61', name: 'Caipiroska Maracujá/Morango', price: 400, description: 'Vodka, Açúcar, Maracujá/Morango', image: 'https://source.unsplash.com/400x300/?strawberry-passion-fruit-caipiroska', category: 'Caipirinhas' },
+    
+    // Mojitos
+    { id: '62', name: 'Mojito de limão', price: 400, description: 'Bacardi, lima, açucar, soda', image: 'https://source.unsplash.com/400x300/?classic-lime-mojito-with-mint', category: 'Mojitos' },
+    { id: '63', name: 'Strowberry Mojito', price: 450, image: 'https://source.unsplash.com/400x300/?fresh-strawberry-mojito-cocktail', category: 'Mojitos' },
+    { id: '64', name: 'Passion fruit Mojito', price: 450, image: 'https://source.unsplash.com/400x300/?tropical-passion-fruit-mojito', category: 'Mojitos' },
+    { id: '65', name: 'Flying Mojito', price: 500, image: 'https://source.unsplash.com/400x300/?blue-curacao-cocktail-mojito', category: 'Mojitos' },
+    
+    // Cocktails
+    { id: '66', name: 'Cosmopolitan', price: 500, description: 'Vodka, triple Sec, Cranberry juice, grenadine', image: 'https://source.unsplash.com/400x300/?classic-cosmopolitan-cocktail', category: 'Cocktails' },
+    { id: '67', name: 'Margarita', price: 500, description: 'Tequila, triple Sec, sumo de limão', image: 'https://source.unsplash.com/400x300/?classic-margarita-cocktail-with-salt-rim', category: 'Cocktails' },
+    { id: '68', name: 'Sexy on the beach', price: 550, description: 'Vodka, peach schaps, sumo de laranja, grenadine', image: 'https://source.unsplash.com/400x300/?sex-on-the-beach-cocktail-orange', category: 'Cocktails' },
+    { id: '69', name: 'Long Island Ice Tea', price: 550, description: 'Vodka, Tequila, Bacardi, Gin, triple Sec, coca-cola', image: 'https://source.unsplash.com/400x300/?long-island-iced-tea-cocktail', category: 'Cocktails' },
+    { id: '70', name: 'Woo-Woo', price: 400, description: 'Vodka, peach schnaps, Cranberry juice', image: 'https://source.unsplash.com/400x300/?woo-woo-vodka-cranberry-cocktail', category: 'Cocktails' },
+    { id: '71', name: 'Whisk sour', price: 500, description: 'Whisk ,tripli sec, açucar, sumo de limão', image: 'https://source.unsplash.com/400x300/?classic-whiskey-sour-cocktail-with-cherry', category: 'Cocktails' },
+
+    // Shooters
+    { id: '72', name: 'Blowjob', price: 250, description: 'Kahlua, Amarula, natas', image: 'https://source.unsplash.com/400x300/?blowjob-layered-shooter-drink', category: 'Shooters' },
+    { id: '73', name: 'Black Jack', price: 250, description: 'Jack Daniels, Sambuca', image: 'https://source.unsplash.com/400x300/?blackjack-coffee-whiskey-shot', category: 'Shooters' },
+    { id: '74', name: 'Jager-master', price: 200, image: 'https://source.unsplash.com/400x300/?jagermeister-cold-shot-glass', category: 'Shooters' },
+    { id: '75', name: 'Jager Bomb', price: 300, description: 'Jagermeister, RedBull', image: 'https://source.unsplash.com/400x300/?jager-bomb-drink-red-bull', category: 'Shooters' },
+    { id: '76', name: 'Cucaracha', price: 200, description: 'Tequila, kahlua', image: 'https://source.unsplash.com/400x300/?flaming-cucaracha-tequila-shot', category: 'Shooters' },
+    { id: '77', name: 'Tgv', price: 250, description: 'Tequila, Gin e Vodka', image: 'https://source.unsplash.com/400x300/?tgv-tequila-gin-vodka-shot', category: 'Shooters' },
+    { id: '78', name: 'Sao Domingo', price: 150, image: 'https://source.unsplash.com/400x300/?sao-domingos-cachaca-shot', category: 'Shooters' },
+    { id: '79', name: 'Primerinha', price: 50, image: 'https://source.unsplash.com/400x300/?small-cachaca-shot', category: 'Shooters' },
+
+    // Entradas
+    { id: '80', name: 'Sopa de Legumes', price: 65, image: 'https://source.unsplash.com/400x300/?hearty-vegetable-soup-bowl', category: 'Entradas' },
+    { id: '81', name: 'Sopa de Feijão', price: 75, image: 'https://source.unsplash.com/400x300/?brazilian-black-bean-soup', category: 'Entradas' },
+    { id: '82', name: 'Chamussas (4 uni)', price: 170, image: 'https://source.unsplash.com/400x300/?crispy-fried-samosas-plate', category: 'Entradas' },
+    { id: '83', name: 'Rissóis de camarão (4 uni)', price: 170, image: 'https://source.unsplash.com/400x300/?portuguese-shrimp-rissois-fried', category: 'Entradas' },
+    
+    // Pratos Principais
+    { id: '84', name: 'Picanha', price: 850, description: 'Arroz/batata e salada', image: 'https://source.unsplash.com/400x300/?brazilian-picanha-steak-with-rice-and-salad', category: 'Pratos Principais' },
+    { id: '85', name: 'Chuck', price: 550, description: 'Arroz/batata e salada', image: 'https://source.unsplash.com/400x300/?grilled-chuck-steak-with-fries-and-salad', category: 'Pratos Principais' },
+    { id: '86', name: 'T-Bone', price: 650, description: 'Arroz/batata e salada', image: 'https://source.unsplash.com/400x300/?juicy-t-bone-steak-with-fries-and-salad', category: 'Pratos Principais' },
+    { id: '87', name: 'Carne de Porco', price: 550, description: 'Batata/xima e salada', image: 'https://source.unsplash.com/400x300/?grilled-pork-chops-with-potatoes-and-salad', category: 'Pratos Principais' },
+    { id: '88', name: 'Pernil', price: 750, description: 'Arroz/vegetais', image: 'https://source.unsplash.com/400x300/?roasted-pork-shank-with-vegetables', category: 'Pratos Principais' },
+    { id: '89', name: 'Bitoque da Zona', price: 450, description: 'Batata, queijo e ovo salada', image: 'https://source.unsplash.com/400x300/?portuguese-bitoque-steak-with-egg-and-cheese', category: 'Pratos Principais' },
+    { id: '90', name: 'Tábua de Carne (Média)', price: 950, image: 'https://source.unsplash.com/400x300/?medium-mixed-grill-meat-platter', category: 'Pratos Principais' },
+    { id: '91', name: 'Tábua de Carne (Grande)', price: 1850, image: 'https://source.unsplash.com/400x300/?large-mixed-grill-meat-platter-for-sharing', category: 'Pratos Principais' },
+    { id: '92', name: '¼ Frango', price: 250, description: 'Batata/arroz e salada', image: 'https://source.unsplash.com/400x300/?quarter-grilled-chicken-with-fries', category: 'Pratos Principais' },
+    { id: '93', name: '½ Frango', price: 450, description: 'Batata/arroz e salada', image: 'https://source.unsplash.com/400x300/?half-grilled-piri-piri-chicken', category: 'Pratos Principais' },
+    { id: '94', name: '1 Frango', price: 850, description: 'Batata/arroz e salada', image: 'https://source.unsplash.com/400x300/?whole-grilled-piri-piri-chicken-platter', category: 'Pratos Principais' },
+    
+    // Saladas
+    { id: '95', name: 'Salada Grega', price: 350, image: 'https://source.unsplash.com/400x300/?fresh-greek-salad-with-feta-cheese', category: 'Saladas' },
+    { id: '96', name: 'Salada de frango', price: 390, image: 'https://source.unsplash.com/400x300/?grilled-chicken-salad-bowl', category: 'Saladas' },
+
+    // Petiscos
+    { id: '97', name: 'Coração de galinha', price: 250, image: 'https://source.unsplash.com/400x300/?grilled-chicken-hearts-skewers', category: 'Petiscos' },
+    { id: '98', name: 'Espetada de frango', price: 350, image: 'https://source.unsplash.com/400x300/?chicken-kebab-skewers-with-vegetables', category: 'Petiscos' },
+    { id: '99', name: 'Chouriço', price: 200, image: 'https://source.unsplash.com/400x300/?flame-grilled-chorizo-sausage', category: 'Petiscos' },
+    { id: '100', name: 'Babalaza', price: 250, image: 'https://source.unsplash.com/400x300/?braised-chicken-gizzards-appetizer', category: 'Petiscos' },
+    { id: '101', name: 'Cabeça de vaca', price: 210, image: 'https://source.unsplash.com/400x300/?slow-cooked-cow-head-stew-traditional', category: 'Petiscos' },
+    { id: '102', name: 'Dobrada de vaca', price: 210, image: 'https://source.unsplash.com/400x300/?portuguese-dobrada-beef-tripe-stew', category: 'Petiscos' },
+    { id: '103', name: 'Rabada', price: 250, image: 'https://source.unsplash.com/400x300/?brazilian-oxtail-stew-rabada', category: 'Petiscos' },
+    { id: '104', name: 'Carne', price: 210, image: 'https://source.unsplash.com/400x300/?traditional-beef-stew-bowl', category: 'Petiscos' },
+    { id: '105', name: 'Babalaza (3 uni)', price: 200, image: 'https://source.unsplash.com/400x300/?three-chicken-gizzard-skewers', category: 'Petiscos' },
+
+    // Extras
+    { id: '106', name: '½ dúzia de Asinhas', price: 150, description: 'Batata', image: 'https://source.unsplash.com/400x300/?half-dozen-crispy-chicken-wings', category: 'Extras' },
+    { id: '107', name: '1 dúzia de Asinhas', price: 300, description: 'Batata', image: 'https://source.unsplash.com/400x300/?dozen-crispy-chicken-wings-platter', category: 'Extras' },
+    { id: '108', name: 'Tábua de queijo', price: 195, image: 'https://source.unsplash.com/400x300/?assorted-cheese-board-with-grapes', category: 'Extras' },
+    { id: '109', name: 'Azeitonas', price: 150, image: 'https://source.unsplash.com/400x300/?bowl-of-marinated-olives', category: 'Extras' },
+    { id: '110', name: 'Arroz', price: 100, image: 'https://source.unsplash.com/400x300/?steamed-white-rice-bowl', category: 'Extras' },
+    { id: '111', name: 'Xima', price: 80, image: 'https://source.unsplash.com/400x300/?african-cornmeal-porridge-xima', category: 'Extras' },
+    { id: '112', name: 'Salada de alface', price: 80, image: 'https://source.unsplash.com/400x300/?simple-green-lettuce-salad', category: 'Extras' },
+    { id: '113', name: 'Batata frita', price: 100, image: 'https://source.unsplash.com/400x300/?basket-of-crispy-french-fries', category: 'Extras' },
+    { id: '114', name: 'Couve', price: 75, image: 'https://source.unsplash.com/400x300/?sauteed-collard-greens-couve', category: 'Extras' },
+    { id: '115', name: 'Feijão preto', price: 130, image: 'https://source.unsplash.com/400x300/?brazilian-black-beans-feijoada', category: 'Extras' },
+    { id: '116', name: 'Pão', price: 30, image: 'https://source.unsplash.com/400x300/?basket-of-fresh-bread-rolls', category: 'Extras' },
+    { id: '117', name: 'Take Away', price: 20, image: 'https://source.unsplash.com/400x300/?restaurant-take-away-paper-bag', category: 'Extras' },
+    { id: '118', name: 'Copo descartável', price: 10, image: 'https://source.unsplash.com/400x300/?stack-of-plastic-disposable-cups', category: 'Extras' },
+];
