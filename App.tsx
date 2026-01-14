@@ -10,7 +10,7 @@ import CategoryFilter from './components/CategoryFilter';
 import { PlusIcon, SearchIcon } from './components/icons';
 import { generateImageFromPrompt } from './lib/gemini';
 
-const WHATSAPP_NUMBER = "258840000000"; // Substitua pelo número de WhatsApp do restaurante
+const WHATSAPP_NUMBER = "258824788260"; // Substitua pelo número de WhatsApp do restaurante
 
 const App: React.FC = () => {
     const [menuItems, setMenuItems] = useState<MenuItem[]>(initialMenuData);
